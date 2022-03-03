@@ -1,0 +1,34 @@
+"""Enable ssh on your Pi"""
+
+Mount the micro sd card containing Rasbian OS, using an adapter if necessary.
+
+Open the Boot partition in file explorer
+
+Create a new, empty TXT file named ssh in the boot drectory
+
+Save and Exit
+
+"""You have now enabled ssh"""
+
+"""Next step is to configure the Pi as an ethernet gadget for Windows. This will allow you to ssh into the Pi using [ssh pi@raspberrypi.local]"""
+
+Open the "Config.txt" file in Notepad
+
+Add this string to a new line at the bottum of the file. : dtoverlay=dwc2 
+
+Save and Exit 
+
+Now open cmdline.txt in Notepad
+
+Make sure to open in full screen
+
+Add this string after the "root wait" string and before anything that comes after. : modules-load=dwc2,g_ether
+
+Should look like this
+
+[console=serial0,115200 console=tty1 root=PARTUUID=dd2cc413-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait modules-load=dwc2,g_ether]
+
+Save and Exit
+
+"""Make sure to place (modules-load=dwc2,g_ether) before any text that follows "root wait" """ 
+""" Once you have completed these steps, eject the sd card and insert it into the Pi"""
