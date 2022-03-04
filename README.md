@@ -1,7 +1,3 @@
 # Raspi-Pi
-Basic config of raspberry pi zero including tutorial. 
+This repo is aimed to be a simple tutorial on configuring your Raspberry Pi Zero, allowing you access to ssh and ftp.
 
-
-Step 1. Follow First-Steps file 
-
-Step 2. At this point you will be connecting you Pi to your PC. Follow steps in the Raspian-Config file
