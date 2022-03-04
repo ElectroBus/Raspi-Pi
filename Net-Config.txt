@@ -40,6 +40,7 @@
         """ You are now running an open unsecure ftpserver on your local network """ 
         
 
-> Install FileZilla connect to your ftp server using the IP of your Pi
+> Install FileZilla connect to your ftp server using the IP of your Pi, with username 'pi' and your password
+""" It will warn you that the ftp server is not secure, press ok """
         
         
