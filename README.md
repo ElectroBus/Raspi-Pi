@@ -11,3 +11,10 @@
 
 >This tutorial will work for a basic Raspberry Pi Zero W without the OLED Bonet
 
+
+## Files In Order
+>Follow these files in order for step-by-step instructions, including all commands, on how to configure your Raspberry Pi Zero W. 
+
+- First-Steps.txt
+- Rasbian-Config.txt
+- Net-Config.txt
