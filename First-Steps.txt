@@ -31,4 +31,5 @@ Should look like this
 Save and Exit
 
 """Make sure to place (modules-load=dwc2,g_ether) before any text that follows "root wait" """ 
+
 """ Once you have completed these steps, eject the sd card and insert it into the Pi"""
