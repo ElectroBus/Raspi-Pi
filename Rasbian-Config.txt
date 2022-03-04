@@ -3,7 +3,7 @@
 
 Open CMD 
 
-type the following string : ssh pi@raspberrypi.local
+type the following command : ssh pi@raspberrypi.local
 
 """ It should ask if you are sure about the connection, Click 'yes' """
 
@@ -12,9 +12,11 @@ Enter the default password : raspberry
 
 """ If you are met with a linux prompt that looks like this 'pi@raspberrypi:~ $' you are ready to move on to the next steps """
 
+
 """ If you get an error while trying to connect, follow the Enable-Ethernet/RNDIS-Gadget File """ 
 
-Type the following string : sudo raspi-config
+Type the following command : sudo raspi-config
+
 
 """ This will take you into rasbians built in config tool """
 
@@ -28,15 +30,21 @@ Enter your Passphrase
 
 select yes if prompted to reboot
 
-After reboot, open CMD and connect to the Pi using the same theps above
+After reboot, open CMD and connect to the Pi using the same theps above with same IP because we are still connected to the Pi from our host machine
 
 """ At this point, you can connect the Pi to an external power source (any usb power). However you will have to figure out the Ip address yourself. """
+
 
 """ BE AWARE!! as long as you have the Pi connected to your host PC, it will still get its Ip address from the PC instead of your routers DHCP """
 
 Once you find the IP, type : ssh pi@ipaddress
 
+
 """ If you are prompted for a password, you have correctly configured your Pi for SSH, and to use your local ap for internet access """
+
+
+
+""" Change Default Password """
 
 To change the default password type : sudo raspi-config
 
@@ -46,10 +54,14 @@ Highlight the third line for Password, and press enter
 
 create a new password
 
+
+
+""" Enable I2C for OLED Bonet """
+
 Highlight the third option for interface Options, and press enter
 
 Highlight the fifth option for I2C, and press enter
 
 Highlight Yes, and press enter
 
-""" You have now enables the Option OLED Bonet """ 
+ 
