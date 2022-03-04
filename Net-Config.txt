@@ -5,3 +5,34 @@
         
         3. CONFIGURE FTP SEVER ON PI  "This step will make it easy to upload and manage files on your Pi using FileZilla and """"" "
 
+
+
+> Setup Static IP on Local Network and DNS on your Pi
+
+        > To set a static IP and add DNS on rasbian, you must to edit the '/etc/dhcpcd.conf' file.
+        > If you dont have a DNS just use CloudFlare '1.1.1.1 1.0.0.1'
+        > At the bottum of the file add the following lines, replacing the emboldened names with your own network details
+        
+        > use 'sudo nano /etc/dhcpcd.conf' to edit the file
+        
+        interface NETWORK
+        static ip_address=STATIC_IP/24
+        static routers=ROUTER_IP
+        static domain_name_servers=DNS_IP
+        
+        Example : 
+        
+        interface wlan0
+        static ip_address=192.168.1.120/24
+        static routers=192.168.1.254
+        static domain_name_servers=192.168.1.254
+        
+        >save the file and exit
+        Type this command 'sudo service dhcpcd restart' to restart the dhcpd service
+        
+        Type 'sudo reboot' 
+       
+       
+ > Setup 
+        
+        
