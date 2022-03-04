@@ -4,6 +4,28 @@
 From the bash shell type these commands in order
 
 - sudo apt-get update
-- sudo apt-get install -y build-essential python-dev python-pip
+- sudo apt-get install -y build-essential python3-dev python3-pip
 - sudo pip install RPi.GPIO
+- sudo apt-get install -y python3-pil python3-smbus i2c-tools
 
+> Adafruit SSD1306 python library code
+
+- sudo apt-get install -y git
+- git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
+- cd Adafruit_Python_SSD1306
+- sudo python setup.py install
+
+> Test your OLED Bonet, type the following to display : IP, CPU usage, MEM Usage, Disk usage.
+
+- sudo python examples/stats.py
+
+
+> To put stats.py in your startup folder, type the following.
+
+- sudo nano /etc/rc.local
+""" Add this line before/above the line containing "exit 0"  """ -->
+- sudo python /home/pi/Adafruit_Python_SSD1306/examples/stats.py  &
+
+- sudo reboot
+
+""" When your pi reboots, it should display your stats. Now you wont forget your IP 8) """
