@@ -45,3 +45,11 @@ Highlight the first line for System Options, and press enter
 Highlight the third line for Password, and press enter
 
 create a new password
+
+Highlight the third option for interface Options, and press enter
+
+Highlight the fifth option for I2C, and press enter
+
+Highlight Yes, and press enter
+
+""" You have now enables the Option OLED Bonet """ 
