@@ -1,3 +1,27 @@
+""" If you only have a Pi Zero, an 8gb MicroSD card, and a host machine, and have not downloaded or burned rasbian to your SD, start here"""
+
+""" If you have already burned the ISO to your SD, start at """Enable ssh on your Pi""" """
+
+Donwload balenaEtcher from : https://www.balena.io/etcher/
+Install etcher
+
+Download the rasbian lite OS from : https://www.raspberrypi.com/software/operating-systems/
+
+Unzip the folder and you have the ISO
+
+Open Etcher
+
+Select the ISO file from wherever you saved it
+
+Select the SD card if not already selected 
+Hit Flash!
+
+""" Now that the SD cards contains the rasbian lite OS, you may move on to the next section """ 
+
+""" Do not remove the SD card yet, there is still some configuration to do """
+
+
+
 """Enable ssh on your Pi"""
 
 Mount the micro sd card containing Rasbian OS, using an adapter if necessary.
@@ -9,6 +33,8 @@ Create a new, empty TXT file named ssh in the boot drectory
 Save and Exit
 
 """You have now enabled ssh"""
+
+
 
 """Next step is to configure the Pi as an ethernet gadget for Windows. This will allow you to ssh into the Pi using [ssh pi@raspberrypi.local]"""
 
