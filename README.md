@@ -18,3 +18,4 @@
 - First-Steps.txt
 - Rasbian-Config.txt
 - Net-Config.txt
+- RPi-GPIO.txt
