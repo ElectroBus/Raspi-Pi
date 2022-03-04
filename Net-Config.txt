@@ -33,6 +33,13 @@
         Type 'sudo reboot' 
        
        
- > Setup 
+ > Setup proftpd-core
+ 
+        > Type 'sudo apt install -y proftpd' 
+        > Type 'sudo service proftpd reload'
+        """ You are now running an open unsecure ftpserver on your local network """ 
+        
+
+> Install FileZilla connect to your ftp server using the IP of your Pi
         
         
