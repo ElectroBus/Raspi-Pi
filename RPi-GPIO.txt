@@ -1,0 +1,9 @@
+(Adapted from https://learn.adafruit.com/adafruit-128x64-oled-bonnet-for-raspberry-pi/usage)
+""" This file will walk you through the install and setup of depedencies needed for RPI-GPIO to use the OLED Bonet """
+*** I have updated the commands used for python3 and I had issues installing and configuring this with python2 ***
+From the bash shell type these commands in order
+
+- sudo apt-get update
+- sudo apt-get install -y build-essential python-dev python-pip
+- sudo pip install RPi.GPIO
+
