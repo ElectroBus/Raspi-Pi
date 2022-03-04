@@ -19,3 +19,14 @@
 - Rasbian-Config.txt
 - Net-Config.txt
 - RPi-GPIO.txt
+
+
+
+
+
+
+
+
+
+First draft finished : 3/4/22 4:30pm
+BXT
